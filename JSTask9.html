@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task9</title>
+
+    <style>
+        th,label{
+            color: white;
+            text-align: right;
+            padding-right: 50px;
+            padding: 10px;
+        }
+        button{
+            width:300px;
+            height:50px;
+            margin-left: 225px;
+            font-weight: bold;
+            font-size: larger;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(255, 0, 111);">
+    <div style="background-color: rgb(103, 23, 42);margin-left: 50px;margin-right: 50px;padding-top: 25px;padding-bottom: 25px;">
+        <form>
+            <table style="width:800px;">
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" value="your name"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input name="email" type="text"value="your email"></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" ></td>
+                </tr>
+                <tr>
+                    <th>Phone number:</th>
+                    <td><input type="text" ></td>
+                </tr>
+    
+                <tr>
+                    <th rowspan="2">Gender:</th>
+                    <td><input type="radio" id="male" name="male" value="male">
+                        <label >Male</label></td>
+                </tr>
+    
+                <tr>
+                    <td><input type="radio" id="female" name="female" value="female">
+                        <label >Female</label></td>
+                </tr>
+                <tr>
+                    <th>Language:</th>
+                    <td><select name="count" id="count">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <th>zip code:</th>
+                    <td><input name="zc" type="text"></td>
+                </tr>
+
+                <tr>
+                    <th>About:</th>
+                    <td><textarea id="ab" name="ab" rows="3" cols="25">Write about yourself...
+                    </textarea></td>
+                </tr>
+            </table><br>
+            <button>Register</button>
+        </form>
+    </div>
+</body>
+</html>

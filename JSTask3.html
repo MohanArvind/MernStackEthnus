@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task3</title>
+
+    <style>
+        span{
+            color: red;  
+        }
+    </style>
+
+    <script>
+        function valid(){
+            var x = document.getElementById("name");
+            var y = document.getElementById("names");
+            if(x.innerHTML==null||x.innerHTML==""){
+                x.style.borderColor= "red";
+                y.innerHTML="This field is required";
+            }
+
+            x = document.getElementById("email");
+            y = document.getElementById("emails");
+            if(x.innerHTML==null||x.innerHTML==""){
+                x.style.borderColor= "red";
+                y.innerHTML="A valid email address is required";
+            }
+
+            x = document.getElementById("web");
+            y = document.getElementById("webs");
+            if(x.innerHTML==null||x.innerHTML==""){
+                x.style.borderColor= "red";
+                y.innerHTML="A valid URL is required";
+            }
+
+            x = document.getElementById("msg");
+            y = document.getElementById("msgs");
+            if(x.innerHTML==null||x.innerHTML==""){
+                x.style.borderColor= "red";
+                y.innerHTML="This field is required";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <lable>Name: </lable>
+        <input type="text" id="name">
+        <span id="names"></span><br><br>
+
+        <lable>Email: </lable>
+        <input type="text" id="email">
+        <span id="emails"></span><br><br>
+
+        <lable>Website: </lable>
+        <input type="text" id="web">
+        <span id="webs"></span><br><br>
+
+        <lable>Message: </lable>
+        <textarea id="msg"></textarea>
+        <span id="msgs"></span><br><br>
+    </form>
+    <button onclick="valid()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task7</title>
+
+    <script>
+        function f1(){
+            var x=document.getElementById("1").value;
+            var y=document.getElementById("2").value; 
+            var z=document.getElementById("ans");
+            z.innerHTML="The Result is : "+(x*y);
+        }
+        function f2(){
+            var x=document.getElementById("1").value;
+            var y=document.getElementById("2").value; 
+            var z=document.getElementById("ans");
+            z.innerHTML="The Result is : "+(x/y);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>1st Number :</label>
+        <input type="text" id="1"><br>
+        <label>2nd Number :</label>
+        <input type="text" id="2"><br>
+    </form>
+    <button onclick="f1()">Multiply</button>
+    <button onclick="f2()">Divide</button>
+    <br>
+    <p id="ans"></p>
+</body>
+</html>
